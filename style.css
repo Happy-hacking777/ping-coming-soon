@@ -75,13 +75,29 @@
     width: 80%;
   }
  .email-input {
-  border: 1px;
-  border-style: solid;
+  border: 1px solid hsl(223, 100%, 88%);
   border-radius: 20px;
-  border-color: hsl(223, 100%, 88%);
   height: 4rem;
   width: 100%;
+  padding-left: 2rem;
  }
+ .email-input:focus {
+  border-color: hsl(223, 100%, 88%); /* Keep the light blue border on focus */
+  outline: none; /* Remove the default browser outline */
+}
+ .email-input.invalid {
+  border-color: hsl(354, 100%, 66%);
+ }
+ .error-message {
+  color: hsl(354, 100%, 66%);
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  display: none;
+  padding: 0;
+ }
+ .email-input:valid {
+  border-color: hsl(223, 100%, 88%);
+}
  input {
   text-align: left;
   padding-left: 2rem;

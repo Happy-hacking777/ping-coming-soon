@@ -21,9 +21,12 @@
       <p>Subscribe and get notified</p>
       <div class="email">
         <input type="email" class="email-input" placeholder="Your email address..." aria-label="Enter your email address">
+        <p class="error-message">Please provide a valid email address</p>
+
         <div class="email-button">
           <button aria-label="Notify me">Notify Me</button>
         </div>
+
       </div>
       <img src="./images/illustration-dashboard.png" alt="Illustration of the dashboard" class="dashboard">
       <div class="social-media">
@@ -35,5 +38,20 @@
     </div>
   </main>
   <footer><p>&copy;Copyright Ping. All rights reserved.</p></footer>
+  <script>
+    document.querySelector("button").addEventListener("click", function (event) {
+      const emailInput = document.querySelector(".email-input");
+      const errorMessage = document.querySelector(".error-message");
+
+      if (!emailInput.validity.valid) {
+        event.preventDefault();
+        emailInput.classList.add("invalid");
+        errorMessage.style.display = "block";
+      } else {
+        emailInput.classList.remove("invalid");
+        errorMessage.style.display = "none";
+      }
+    });
+  </script>
 </body>
 </html>
