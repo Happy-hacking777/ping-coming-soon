@@ -144,4 +144,36 @@
  footer p {
   color: hsl(0, 0%, 75%);
  }
+ @media (min-width: 600px) {
+  .container {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+  .email {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .email-input {
+    flex-basis: 60%; 
+        width: 100%;
+  }
+  .email-button {
+    flex-basis: 40%; 
+    width: 100%;
+  }
+  button {
+    width: 100%; 
+    margin: 0; 
+    cursor: pointer;
+}
+
+ }
  
