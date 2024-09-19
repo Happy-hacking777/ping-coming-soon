@@ -28,8 +28,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/Screenshot%202024-09-10%20at%2017.53.51.png)
-![](./images/Screenshot%202024-09-10%20at%2017.54.14.png)
+![](./images/Screenshot%202024-09-19%20at%2020.35.56.png)
+![](./images/Screenshot%202024-09-19%20at%2020.36.09.png)
+![](./images/Screenshot%202024-09-19%20at%2020.36.31.png)
+![](./images/Screenshot%202024-09-19%20at%2020.36.40.png)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
