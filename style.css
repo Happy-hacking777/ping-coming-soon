@@ -145,35 +145,47 @@
   color: hsl(0, 0%, 75%);
  }
  @media (min-width: 600px) {
-  .container {
-    padding-left: 15rem;
-    padding-right: 15rem;
-  }
   .email {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 8rem;
-    width: 100%;
-    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "input button"
+      "error error";
+      column-gap: 3rem; /* Gap between input and button */
+      row-gap: 0.1rem; /* Gap between rows */
+      padding: 0;
+      margin: 0;
+      margin-bottom: 5rem;
+      width: 60%;
+    
   }
+  
   .email-input {
+    grid-area: input;
     flex-basis: 60%; 
-        width: 100%;
+    width: 100%;
   }
+  
   .email-button {
+    grid-area: button;
     flex-basis: 40%; 
     width: 100%;
   }
+
+  .error-message {
+    grid-area: error;
+    margin-top: 0.5rem;
+    margin-right: 2rem; /* Moves the error message to the right side */
+    align-self: center;
+  }
+
   button {
     width: 100%; 
     margin: 0; 
     cursor: pointer;
+  }
+  .dashboard {
+    max-width: 60%;
+  }
 }
-
- }
- 
